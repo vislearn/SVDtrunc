@@ -3,7 +3,7 @@
 **Denis Zavadski**\*, **Sebastian Heid**\*, Damjan Kalšan, Stefan Roth, Carsten Rother
 <br><sub>\*Equal contribution. Heidelberg University · Zuse School ELIZA · TU Darmstadt · hessian.AI</sub>
 
-### [Project page](https://vislearn.github.io/SVDtrunc/) · arXiv (soon) · Code (soon) · Weights (soon)
+### [Project page](https://vislearn.github.io/SVDtrunc/) · [arXiv](https://arxiv.org/abs/2609.04646) · Code (soon) · Weights (soon)
 
 This repository hosts the project page for **SVDtrunc**, an importance-aware truncated SVD
 compression scheme for Diffusion Transformers.
