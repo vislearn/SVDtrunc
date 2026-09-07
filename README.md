@@ -4,7 +4,7 @@
 
 <sub><sup>1</sup>Heidelberg University · <sup>2</sup>Zuse School ELIZA · <sup>3</sup>TU Darmstadt · <sup>4</sup>hessian.AI · <sup>\*</sup>Equal contribution</sub>
 
-### [Project page](https://vislearn.github.io/SVDtrunc/) · arXiv (soon) · Weights (soon)
+### [Project page](https://vislearn.github.io/SVDtrunc/) · [arXiv](https://arxiv.org/abs/2609.04646) · Weights (soon)
 
 > [!NOTE]
 > **Code release coming soon.** Training, compression and evaluation code will land in this
@@ -53,7 +53,7 @@ training-free setting, and results on step-distilled FLUX.schnell.
 ## Release checklist
 
 - [x] Project page
-- [ ] arXiv preprint
+- [x] arXiv preprint
 - [ ] Inference code
 - [ ] Compressed checkpoints on Hugging Face
 - [ ] Compression and probing code
