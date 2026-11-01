@@ -1,6 +1,6 @@
 # Importance-Aware Low-Rank Distillation of Diffusion Transformers
 
-**Denis Zavadski**\*, **Sebastian Heid**\*, Damjan Kalšan, Stefan Roth, Carsten Rother
+[**Denis Zavadski**](https://sipirius.github.io/)\*, **Sebastian Heid**\*, Damjan Kalšan, Stefan Roth, Carsten Rother
 <br><sub>\*Equal contribution. Heidelberg University · Zuse School ELIZA · TU Darmstadt · hessian.AI</sub>
 
 ### [Project page](https://vislearn.github.io/SVDtrunc/) · [arXiv](https://arxiv.org/abs/2609.04646) · Code (soon) · Weights (soon)
