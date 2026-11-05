@@ -1,11 +1,11 @@
 # Importance-Aware Low-Rank Distillation of Diffusion Transformers
 
-[**Denis Zavadski**](https://sipirius.github.io/)\*, **Sebastian Heid**\*, Damjan Kalšan, Stefan Roth, Carsten Rother
+[**Denis Zavadski**](https://sipirius.github.io/)\*, **Sebastian Heid**\*, Damjan Kalšan, [Stefan Roth](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp), [Carsten Rother](https://hci.iwr.uni-heidelberg.de/vislearn/people/carsten-rother/)
 <br><sub>\*Equal contribution. Heidelberg University · Zuse School ELIZA · TU Darmstadt · hessian.AI</sub>
 
-### [Project page](https://vislearn.github.io/SVDtrunc/) · [arXiv](https://arxiv.org/abs/2609.04646) · Code (soon) · Weights (soon)
+### [Project page](https://vislearn.github.io/SVDtrunc/) · [arXiv](https://arxiv.org/abs/2609.04646) · [Code](https://github.com/vislearn/SVDtrunc) · [Weights](https://huggingface.co/CVL-Heidelberg/SVDtrunc)
 
-This repository hosts the project page for **SVDtrunc**, an importance-aware truncated SVD
+This branch hosts the project page for **SVDtrunc**, an importance-aware truncated SVD
 compression scheme for Diffusion Transformers.
 
 Truncated SVD is known to fail on large language models, where naive low-rank approximation of
@@ -23,9 +23,9 @@ Applied to FLUX.dev, it retains near-full quality at 68% of the original paramet
 
 | | |
 |---|---|
-| Project page | this repository |
-| Code | released shortly |
-| Weights | on Hugging Face |
+| Project page | this branch (`gh-pages`) |
+| Code | [`main` branch](https://github.com/vislearn/SVDtrunc) |
+| Weights | [CVL-Heidelberg/SVDtrunc](https://huggingface.co/CVL-Heidelberg/SVDtrunc) on Hugging Face |
 
 ## Citation
 
@@ -39,8 +39,7 @@ Applied to FLUX.dev, it retains near-full quality at 68% of the original paramet
 }
 ```
 
-## About this repository
+## About this branch
 
 A static page: one `index.html` with no build step or dependencies, plus an `assets/` folder.
-`build_assets.py` regenerates the assets from the paper's LaTeX source. See
-[NOTES.md](NOTES.md) for maintenance details.
+`build_assets.py` regenerates the assets from the paper's LaTeX source.

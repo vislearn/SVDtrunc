@@ -1,3 +1,4 @@
 .DS_Store
 *.swp
 assets/.tmp/
+__pycache__/
