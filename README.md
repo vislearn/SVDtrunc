@@ -4,7 +4,6 @@
 
 <sub><sup>1</sup>Heidelberg University · <sup>2</sup>Zuse School ELIZA · <sup>3</sup>TU Darmstadt · <sup>4</sup>hessian.AI · <sup>\*</sup>Equal contribution</sub>
 
-[![ECCV 2026](https://img.shields.io/badge/ECCV-2026-1f4e79)](https://eccv.ecva.net/Conferences/2026)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.04646-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.04646)
 [![Project page](https://img.shields.io/badge/Project-Page-0f6b70?logo=googlechrome&logoColor=white)](https://vislearn.github.io/SVDtrunc/)
 [![Weights](https://img.shields.io/badge/Hugging%20Face-Weights-ffd21e?logo=huggingface&logoColor=black)](https://huggingface.co/CVL-Heidelberg/SVDtrunc)
