@@ -1,4 +1,4 @@
-# SVDtrunc: Importance-Aware Low-Rank Distillation of Diffusion Transformers
+# SVDtrunc: Importance-Aware Low-Rank Distillation of Diffusion Transformers - ECCV 2026
 
 [**Denis Zavadski**](https://sipirius.github.io/)<sup>1,2,\*</sup>, **Sebastian Heid**<sup>1,2,\*</sup>, Damjan Kalšan<sup>1</sup>, [Stefan Roth](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp)<sup>2,3,4</sup>, [Carsten Rother](https://hci.iwr.uni-heidelberg.de/vislearn/people/carsten-rother/)<sup>1,2</sup>
 
