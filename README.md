@@ -73,9 +73,10 @@ git clone https://github.com/vislearn/SVDtrunc && cd SVDtrunc
 uv sync                 # or: pip install -e .
 ```
 
-Weights download from the Hugging Face Hub on first use. The models based on FLUX.1-dev load its text encoders and
-autoencoder from [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev), which is gated: accept its
-license on the Hub and log in with `hf auth login`.
+Weights download from the Hugging Face Hub on first use. The text encoders and the autoencoder come from the base
+model, [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) or
+[FLUX.1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell). Both are gated: accept the license on the
+base model's Hub page and log in with `hf auth login`.
 
 ## Generating images
 
