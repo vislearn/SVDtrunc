@@ -6,6 +6,7 @@ log in (`hf auth login`) before the first download.
 """
 
 import dataclasses
+import functools
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -81,6 +82,7 @@ SCHNELL = Base(
 )
 
 
+@functools.cache  # the Hub counts every request as a download, even for a file that is already cached on disk
 def resolve(checkpoint: str | Path) -> Path:
     """Local path of a checkpoint: the file itself if it exists, else `<repo id>/<file>` downloaded from the Hub."""
     path = Path(checkpoint)

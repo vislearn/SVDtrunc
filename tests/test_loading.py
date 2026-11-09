@@ -6,7 +6,7 @@ import pytest
 import torch
 from safetensors.torch import save_file
 
-from svdtrunc.loading import DEV, SCHNELL, detect_base, resolve
+from svdtrunc.loading import DEV, SCHNELL, detect_base, load_structure, read_spec, resolve
 
 
 class TestDetectBase:
@@ -36,3 +36,20 @@ class TestResolve:
     def test_missing_local_paths_are_not_sent_to_the_hub(self, name: str):
         with pytest.raises(FileNotFoundError, match="neither a file nor a Hub file"):
             resolve(name)
+
+    def test_hub_is_asked_once_per_checkpoint(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+        path = tmp_path / "model.safetensors"
+        save_file({"img_in.weight": torch.zeros(1)}, str(path))
+        requests = []
+
+        def download(repo: str, file: str) -> str:
+            requests.append((repo, file))
+            return str(path)
+
+        monkeypatch.setattr("svdtrunc.loading.hf_hub_download", download)
+        resolve.cache_clear()
+        checkpoint = "owner/repo/folder/model.safetensors"
+        detect_base(checkpoint)
+        read_spec(checkpoint)
+        load_structure(checkpoint)
+        assert requests == [("owner/repo", "folder/model.safetensors")]
